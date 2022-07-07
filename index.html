@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@1,400;1,700&family=Lobster&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+    <script src="js/index.js" defer></script>
+    <script src="js/weather.js" defer></script>
+    <title>Visit Stordalen</title>
+</head>
+<body onload="fetchWeather()">
+    <div class="header-wrap">
+        <header class="header-main">
+                <div class="header-buttons">
+                    <div class="header-btn-nearby" >
+                        <span class="fa fa-map-marker" style="font-size:2em"></span>
+                        <span> I NÆRHETEN </span>
+
+                    </div>
+                    <div class="header-btn-search">
+                        <span class="fa fa-search" style="font-size:2em"></span>
+                        <span> SØK </span>
+
+                    </div>
+                    <div class="header-btn-menu">
+                        <span class="fa fa-bars" style="font-size:2em"></span>
+                        <span> MENY </span>
+
+                    </div>
+
+                </div>
+        </header>
+        <div class="headline">
+            <h1> Stordalen </h1>
+            <h3> I sporene til Bjørn West </h3>
+            
+            <div>
+                <li> 
+                    <a href="https://www.google.se/maps/@60.9553963,5.6962377,13z"> Kart </a>
+                </li>
+                <li> post@stordalen.no </li>
+                <li> 
+                    <a href=""> Attraksjoner </a>     
+                </li>
+                <li> 
+                    <a href=""> Bjørn West museet </a>
+                </li>
+            </div>
+        </div>
+    </div>
+    <main>
+        
+        <section class="order-section">
+            <ul>
+                <li>Fiske</li>
+                <li>Paddling</li>
+                <li>Toppturer</li>
+                <li>Frisk luft</li>
+            </ul>
+                
+            <div>
+                <button class="order-btn"> Bestill din reise i dag! </button>
+                <!-- <p> Kreisi deis! 30% rabatt! </p> -->
+            </div>
+
+            <div>
+                <p id="weather-today" >Været nå:</p>
+            </div>
+            
+        </section>
+
+        
+        <div class="main-image">
+            <img src="img/20210920_142844_edit1.jpg" alt="bilde av stordalen">
+        </div>
+
+        <div id="main-text">
+            <h3> Besøk vakre Stordalen og vandre mellom fjell, daler og fiskevann. Følg hvor Bjørn West gjengen tråkket sine spor under 2 verdenskrig.</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quas pariatur nobis non. A, harum quaerat itaque ipsa ab corrupti doloribus, modi asperiores sint, explicabo recusandae voluptatum! Quos, laudantium provident.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit tempora accusantium expedita consequatur dolorum quisquam assumenda pariatur similique unde, illum repellendus labore eaque aliquam doloremque nisi illo reiciendis magnam. Quisquam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nemo aperiam repudiandae quae autem non maiores esse distinctio, quibusdam saepe aliquid minima, vel sequi dolor, sunt placeat repellendus voluptate suscipit? </p>
+        </div>
+
+        <div class="slick-wrapper">
+            <div class="arrows"></div>
+            <div>
+                <div class="slick-wheel">
+                    
+                    <img src="img/robert-bye-5HPVabAsyh0-unsplash.jpg" alt="et bilde">
+                    <img src="https://source.unsplash.com/featured?mountain" alt="">
+                    <img src="https://source.unsplash.com/category/buildings" alt="">
+                    <img src="img/pexels-eberhard-grossgasteiger-1183021.jpg" alt="">
+                    <img src="img/pexels-pixabay-355770.jpg" alt="">
+                    <img src="img/pexels-sagui-andrea-618833.jpg" alt="">
+                    <img src="img/pexels-sam-kolder-2387876.jpg" alt="">
+                    <img src="img/pexels-tyler-lastovich-808465.jpg" alt="">
+                    <img src="img/pexels-zhaocan-li-1755243.jpg" alt="">
+                </div>
+             </div>
+    
+        </div>
+        <div class="weather-yr">
+            <img src="https://www.yr.no/nb/innhold/1-121920/meteogram.svg" alt="">
+        </div>
+    </main>
+    <!-- <button id="weather-btn"> Vær </button> -->
+    
+    
+</body>
+</html>

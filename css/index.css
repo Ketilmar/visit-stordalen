@@ -1,0 +1,245 @@
+
+body {
+    background-color: lightcyan;
+}
+
+
+.header-main {
+    /* display: grid; */
+    /* background: lightskyblue; */
+}
+
+.header-wrap {
+    width: 95%;
+    margin-left: 2.5%;
+    background-image: url("/img/20210920_142844_edit1.jpg"); /* fallback */
+    /* background-image: linear-gradient(180deg, red, yellow), url("/img/20210920_142844_edit1.jpg"); */
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(238, 238, 238)), url("/img/20210920_142844_edit1.jpg");
+    background-size: cover;
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.4023984593837535) 35%, rgba(0,212,255,1) 100%); */
+}
+
+.header-buttons {
+    /* grid-area: header; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: end;
+    background: rgb(238 238 238 / 38%)
+
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+}
+
+.header-btn-nearby {
+    display: grid;
+    justify-items: center;
+}
+
+.header-btn-search {
+    display: grid;
+    justify-items: center;
+    margin-left: 5em;
+}
+
+.header-btn-menu {
+    display: grid;
+    justify-items: center;
+    margin-left: 5em;
+}
+
+
+h1 {
+    font-size: 7em;
+    text-align: center;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    /* grid-area: h1; */
+    font-family: 'Gentium Book Plus', serif;
+    font-family: 'Lobster', cursive;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Gentium Book Plus', serif;
+}
+
+
+.headline {
+    
+    /* grid-template-areas:  */
+}
+
+.headline > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 2em 4em 2em 4em;
+}
+
+.headline > div > li {
+    list-style: none;
+    /* grid-area: listItems; */
+    color: darkgreen;
+}
+
+.headline > div > li > a {
+    color: darkgreen;
+}
+
+
+main {
+    /* background-image: url("/img/pexels-sagui-andrea-618833.jpg") ; */
+}
+
+.order-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 80%;
+    margin: 4em 0 4em 10%;
+}
+
+.order-section > ul {
+    margin-right: 2em;
+}
+
+
+.order-section > ul > li {
+    /* list-style: inside; */
+    font-family: 'Gentium Book Plus', serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.order-section > div > p {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.order-btn {
+    background-color: #e2d9b1;
+    border-radius: 100px;
+    box-shadow: rgba(30, 133, 70, 0.2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: rgb(4, 80, 4);
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 1.5em;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-weight: bold;
+}
+
+.order-btn:hover {
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+
+
+  #weather-today {
+    border-left: 2px solid;
+    /* border-right: 2px solid; */
+    border-color: grey;
+    margin: 0 1em 0 1em;
+    padding-left: 1em;
+    font-size: 1.5em;
+    width: 40%;
+  }
+
+  #weather-today > img {
+    width: 100%;
+  }
+
+
+
+.main-image {
+    margin-bottom: 2em;
+    
+}
+
+.main-image > img {
+    width: 80%;
+    /* height: 50%; */
+    margin-left: 10%;
+}
+
+#main-text {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 80%;
+    margin: 1em 0 4em 10%;
+
+    /* padding-top: 1em; */
+    margin-top: 1em;
+    border-top: 2px solid;
+    border-color: grey;
+}
+
+
+#main-text > h3 {
+    text-align: left;
+    margin-right: 0.5em;
+    font-family: 'Gentium Book Plus', serif;
+}
+
+#main-text > h3::first-letter {
+    font-size: 2em;
+}
+
+#main-text > p {
+    margin-top: 2.7em;
+}
+
+#main-text > p::first-line {
+    /* background: rgb(147, 243, 198); */
+    
+}
+
+#main-text > p::first-letter {
+    /* font-size: 1rem; */
+    /* text-decoration: wavy; */
+    text-transform: capitalize;
+}
+
+.slick-wheel {
+    width: 60%;
+    /* height: 10%; */
+    margin-left: 20%;
+}
+
+.slick-track > img {
+    height: 30em;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 170%;
+    z-index: 10;
+
+}
+
+
+.slick-prev {
+    /* position: absolute; */
+    left: 15%
+}
+
+.slick-next {
+    left: 78%;
+}
+
+.weather-yr {
+    margin: 3em 10% 0 10%;
+}
+
+.weather-yr > img {
+    width: 100%;
+
+}
